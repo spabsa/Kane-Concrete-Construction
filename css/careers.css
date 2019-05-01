@@ -1,0 +1,879 @@
+html, body {
+	margin: 0; 
+	padding: 0;
+}
+
+/*---HEADER---*/
+
+header {
+	background-image: url(../img/support.jpeg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 65vh;
+}
+
+.careers-wrapper{
+	width: 100%;
+	height: 65vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+	color: white;
+	font-size: 5rem;
+	font-family: 'Montserrat';
+	font-weight: bolder;
+	margin: 0;
+}
+
+/*---NAV---*/
+
+nav {
+	background-color: white;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	box-shadow: 0px 0px 100px grey;
+}
+
+li a {
+	text-decoration-line: none;
+	color: rgba(102,102,102,0.75);
+}
+
+nav ul {
+	margin-top: 25px;
+}
+
+li {
+	display: inline-block;
+	font-size: 1.55rem;
+	margin-right: 20px;
+	font-family: 'Rajdhani';
+}
+
+li a:hover {
+	cursor: pointer;
+	color: #1a1a1a;
+	transition: all 0.7s ease;
+}
+
+.after:after {
+	position: relative;
+	left: 12px;
+	top: 2px;
+	display: inline-block;
+	content: "";
+	width: 1px;
+	height: 20px;
+	background-color: rgba(102,102,102,0.25);
+}
+
+.logo {
+	color: red;
+	font-size: 3.7rem;
+	margin: 10px;
+	opacity: 1;
+	margin-left: 30px;
+}
+
+/*---FORM---*/
+
+form {
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	background-color: rgba(102, 102, 102, 0.15);
+	border-radius: 5px;
+}
+
+.form h2 {
+	font-family: 'Rajdhani';
+	color: rgba(102,102,102, 0.85);
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.form h2:after {
+	content: '';
+	width: 18px;
+	height: 2px;
+	background-color: red;
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 13px;
+}
+
+.form h2:before {
+	content: '';
+	width: 18px;
+	height: 2px;
+	background-color: red;
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 13px;
+}
+
+.form .row {
+	margin: 20px;
+	display: flex;
+}
+
+label {
+	color: black;
+}
+
+label, input {
+	font-size: 1.3rem;
+	font-family: 'Rajdhani';
+}
+
+.label {
+	background-color: rgba(102, 102, 102, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row-1, .row-3 {
+	justify-content: space-between;
+}
+
+.row-1 input, .row-3 input {
+	flex-basis: 32.33%;
+}
+
+.row-2 {
+	justify-content: space-between;
+}
+
+.row-2 input {
+	width: 49.15%;
+}
+
+.row-4 {
+	justify-content: space-between;
+}
+
+.row-4 input, .row-4 .label {
+	flex-basis: 24%;
+}
+
+.row-5  {
+	flex-direction: column;
+}
+
+.radio {
+	margin-top: 10px;
+}
+
+.row-6 {
+	justify-content: space-between;
+}
+
+.row-6 input, .row-6 .label {
+	flex-basis: 24%;
+}
+
+.row-7 {
+	justify-content: space-between;
+}
+
+.row-7 .col {
+	flex-basis: 50%;
+}
+
+.row-8 {
+	justify-content: space-between;
+}
+
+.row-8 .col {
+	flex-basis: 50%;
+}
+
+.crime-textarea {
+	margin-top: 10px;
+	display: none;
+	resize: none;
+}
+
+#crime-yes:checked ~ textarea {
+	display: block;
+}
+
+.row-9 {
+	justify-content: space-between;
+}
+
+.row-9 .label {
+	flex-basis: 24%;
+}
+
+.row-9 input {
+	margin-left: 15px;
+	flex-grow: 1;
+}
+
+.row-10 {
+	justify-content: space-between;
+}
+
+.row-10 input, .row-10 .label {
+	flex-basis: 24%;
+}
+
+.row-11 {
+	justify-content: space-between;
+}
+
+.row-11 input, .row-11 .label {
+	flex-basis: 24%;
+}
+
+.row-12 {
+	justify-content: space-between;
+}
+
+.row-12 input, .row-12 .label {
+	flex-basis: 24%;
+}
+
+.row-13  {
+	justify-content: space-between;
+}
+
+.row-13 input, .row-13 .label {
+	flex-basis: 24%;
+}
+
+h3 {
+	font-family: 'Rajdhani';
+	text-align: center;
+}
+
+/*---TABLE---*/
+
+table {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	border-spacing: 15px;
+}
+
+thead tr {
+	background-color: rgba(102, 102, 102, 0.3);
+	color: black;
+}
+
+thead th {
+	font-size: 1.3rem;
+	font-family: 'Rajdhani'; 
+}
+
+th td {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+tbody input {
+	width: 100%;
+}
+
+#submit {
+	background-color: red;
+	border: none;
+	color: white;
+	outline: none;
+	font-size: 1.5rem;
+	padding: 7px;
+	width: 35%;
+	align-self: center;
+	border-radius: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+#submit:hover {
+	cursor: pointer;
+	background-color: #cc0000;
+}
+
+/*---FOOTER---*/
+
+.footer .wrapper {
+	display: flex;
+}
+
+.footer div {
+	display: inline-block;
+	flex-basis: 29%;
+	font-family: 'Rajdhani';
+	color: rgba(102,102,102, 1);
+	margin-top: 5px;
+	justify-content: space-around;
+}
+
+.footer h1 {
+	font-size: 2rem;
+	margin-top: 15px;
+}
+
+.social .inner {
+	width: 100%;
+}
+
+.footer .inner:before {
+	display: inline-block;
+	content: '';
+	width: 29%;
+	height: 2px;
+	background-color: rgba(102,102,102, 0.6);
+	position: absolute;
+	margin-top: 54px;
+}
+
+
+.footer h1 span {
+  display: inline;
+  position: relative;
+}
+
+.footer h1 span:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wrap:before {
+	content: '';
+	width: 100px;
+	height: 2px;
+	background-color: red;
+	position: absolute;
+	margin-top: 55px;
+}
+
+.links a {
+	display: block;
+	text-decoration-line: none;
+	color: rgba(102,102,102, 1);
+	font-size: 1.1rem;
+	position: relative;
+	top: -17px;
+	transition: color 0.4s ease;
+}
+
+.links a:hover {
+	color: red;
+}
+
+.contact p {
+	position: relative;
+	top: -10px;
+}
+
+.social i {
+	font-size: 1.7rem;
+	margin-right: 5px;
+	position: relative;
+	top: -20px;
+	color: rgba(102,102,102, 0.7);
+	transition: all 0.4s ease;
+}
+
+.social i:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#msg {
+	margin-top: -15px;
+}
+
+.footer-textarea {
+	background-color: rgba(102,102,102, 0.2);
+	padding: 0;
+	outline: none;
+	font-size: 1.2rem;
+	color: rgba(102,102,102, 1);
+	resize: none;
+	width: 99.5%;
+}
+
+.footer button {
+	float: right;
+	margin-top: -17px;
+	border: none;
+	font-family: 'Rajdhani';
+	font-size: 1.2rem;
+	transition: all ease 0.4s;
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+	color: red;
+}
+
+.dark {
+	color: red;
+}
+
+.copyright {
+	position: absolute;
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 0;
+	font-size: 1.2rem;
+	padding-bottom: 4px;
+}
+
+
+
+/*-------MEDIA QUERIES-------*/
+
+
+/*---LAPTOP-LARGE---*/
+
+@media screen and (max-width: 1440px) {
+
+	/*---FOOTER---*/
+
+	.footer button {
+		margin-left: 16.5%;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	.row-9 .label{
+		flex-basis: 33%;
+	}
+}
+
+@media screen and (max-width: 985px) {
+	.form h2 {
+		font-size: 2.5rem;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.form h2:before, .form h2:after {
+		width: 15px;
+		margin-bottom: 11px;
+	}
+}
+
+@media screen and (max-width: 924px) {
+	form .label, form input {
+		font-size: 1.1rem;
+	}
+}
+
+@media screen and (max-width: 854px) {
+	.row-6 input {
+		flex-basis: 20%;
+	}
+}
+
+@media screen and (max-width: 829px) {
+
+    .footer .contact p {
+		font-size: 1rem;
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+
+	.footer textarea {
+		font-size: 1rem;
+	}	
+}
+
+@media screen and (max-width: 823px) {
+	
+	/*---MAIN---*/
+
+	header, .careers-wrapper {
+		height: 65vh;
+	}
+
+	.label {
+		font-size: 1rem;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 818px) {
+
+	/*---MAIN---*/
+
+	label {
+		font-size: 1rem;
+	}
+
+}
+
+@media screen and (max-width: 731px) {
+
+	/*---FOOTER---*/
+
+	.footer button {
+		margin-left: 6%;
+	}
+
+	.contact .inner p {
+		margin: 5px;
+	}
+
+}
+
+/*------LANDSCAPE-MODE-MOBILE------*/
+
+@media screen and (max-width: 715px) {
+
+	/*---NAV---*/
+
+	nav ul {
+		padding-left: 0;
+		margin: 0;
+	}
+
+	nav li {
+		font-size: 1.4rem;
+	}
+
+	nav .logo {
+		font-size: 2.5rem;
+	}
+
+	/*---MAIN---*/
+
+	form {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.row {
+		flex-direction: column;
+	}
+
+	.row-1 input, .row-3 input {
+		margin-bottom: 5px; 
+	}
+
+	.row-2 input {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	
+
+	.row-9 input {
+		margin-left: 0;
+	}
+
+	#submit {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 686px) {
+	thead th, tbody input {
+		font-size: 1.15rem;
+	}
+
+	.table-wrap {
+		overflow-x: scroll;
+	}
+
+	.table-wrap table {
+    	min-width: 635px;
+  	}
+}
+
+
+@media screen and (max-width: 640px) {
+	header h1 {
+		font-size: 4rem;
+	}
+
+	/*---FOOTER---*/
+
+	.footer h1 {
+		font-size: 1.5rem;
+	}
+
+	.footer .inner:before {
+		margin-top: 43px;
+	}
+
+	.links a {
+		font-size: 1rem;
+		top: -14px;
+	}
+
+	.social i {
+		font-size: 1.5rem;
+		margin-right: 2px;
+		top: -17px;
+	}
+
+	.footer button {
+		margin-top: -14px;
+		font-size: 1rem;
+	}
+
+	.footer textarea {
+		font
+}	
+
+@media screen and (max-width: 626px) {
+	nav li {
+		font-size: 1.27rem;
+	}
+
+	header h1 {
+		font-size: 3.5rem;
+	}
+}	
+
+
+@media screen and (max-width: 530px) {
+	nav li {
+		font-size: 1.27rem;
+		margin-right: 7px;
+	}
+
+	.after:after {
+		left: 5.5px;
+		top: 4px;
+	}
+
+	.logo {
+		margin-left: 15px;
+	}
+}
+
+@media screen and (max-width: 518px) {
+
+	/*---NAV---*/
+
+	.ham-menu {
+		width: 55px;
+		height: 55px;
+		position: fixed;
+		right: 0;
+		top: 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.m1, .m2, .m3 {
+		border-radius: 4px;
+		margin: 4px;
+		width: 35px;
+		height: 3px;
+		background-color: red;
+		float: left;
+		position: relative;
+		transition:all .3s ease;
+		opacity:1;
+	}
+
+	.hamburger-open .m1{transform: rotate(45deg) translate(4px, 12px);}
+	.hamburger-open .m2{opacity:0}
+	.hamburger-open .m3{transform: rotate(-45deg) translate(3px, -12px);}
+
+	nav li {
+		display: none;
+	}
+
+	/*---FOOTER---*/
+
+	.footer .wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer div {
+		margin: 0;
+	}
+
+	.footer h1 {
+		font-size: 2rem;
+		margin-top: 10px;
+	}
+
+	.footer .inner {
+		margin: 0;
+	}
+
+	.footer .inner:before {
+		display: inline-block;
+		content: '';
+		width: 100%;
+		height: 2px;
+		background-color: rgba(102,102,102, 0.6);
+		position: absolute;
+		margin-top: 48px;
+	}
+
+	.footer h1 span:after {
+	  content: '';
+	  height: 2px;
+	  width: 100%;
+	  background-color: red;
+	  position: absolute;
+	  bottom: 1px;
+	  left: 0;
+	}
+
+	.social .inner {
+		position: relative;
+		top: -10px;
+	}
+
+	.social .inner:before {
+		width: 100vw;
+	}
+
+	.contact .inner {
+		margin-bottom: 20px;
+	}
+
+	.links a {
+		margin-left: 5px;
+	}
+
+	.social h1 {
+		margin-bottom: 10px;
+	}
+
+	.footer button {
+		margin-top: -5px;
+		margin-right: 3px;
+	}
+
+	.social i {
+		font-size: 1.8rem;
+		margin-right: 2px;
+		position: relative;
+		top: -5px;
+		left: 5px;
+		color: rgba(102,102,102, 0.7);
+		transition: all 0.4s ease;
+	}
+
+	.footer-textarea {
+		width: 98%;
+		margin-left: 5px;
+	}
+
+	.footer .contact p {
+		margin: 5px;
+		font-size: 1.2rem;
+	}
+
+	.copyright {
+		background-color: red;
+	}
+
+	.copyright span {
+		color: white;
+		background-color: red;
+		padding: 5px;
+		display: inline-block;
+	}
+}
+
+/*---MOBILE---*/
+
+@media screen and (max-width: 450px) {
+	header h1 {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 425px) {
+
+	/*---NAV---*/
+
+	.logo {
+		font-size: 2.5rem;
+		margin-left: 10px;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	/*---MAIN---*/
+
+	header h1 {
+		text-align: center;
+	}
+
+
+	form {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.row {
+		flex-direction: column;
+	}
+
+	.middle {
+		margin: 0;
+	}
+
+	.row-1 input, .row-3 input {
+		margin-top: 5px;
+		margin-bottom: 5px; 
+	}
+
+	.row-4 input, .row-6 input {
+		margin-bottom: 7px;
+	}
+
+	.row-9 input {
+		margin-left: 0;
+	}
+
+	#submit {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	header h1 {
+		width: 280px;
+		text-align: center;
+	}
+}
