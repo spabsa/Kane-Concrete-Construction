@@ -43,8 +43,13 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 3;
 	box-shadow: 0px 0px 100px grey;
+	transition: all .5s ease;
+}
+
+.ham-nav a {
+	display: none;
 }
 
 nav ul {
@@ -601,18 +606,6 @@ button:hover {
 	}
 }
 
-@media screen and (max-width: 829px) {
-
-    .footer .contact p {
-		font-size: 1rem;
-		margin: 3px;
-	}
-
-	.footer textarea {
-		font-size: 1rem;
-	}	
-}
-
 @media screen and (max-width: 836px) {
 	.services ul {
 		margin-left: 5px;
@@ -622,6 +615,20 @@ button:hover {
 		font-size: 1.2rem;
 	}
 }
+
+@media screen and (max-width: 829px) {
+
+	.footer .contact p {
+		font-size: 1rem;
+		margin-top: 6px;
+		margin-bottom: 6px;
+	}
+
+	.footer textarea {
+		font-size: 1rem;
+	}	
+}
+
 
 @media screen and (max-width: 812px) {
 
@@ -638,17 +645,6 @@ button:hover {
 	.testimony h1 {
 		font-size: 1.25rem;
 	}
-
-	/*---FOOTER---*/
-
-	.footer button {
-		margin-left: 8.5%;
-	}
-
-	.contact .inner {
-		margin-right: 20px;
-	}
-
 }
 
 /*---TABLET---*/
@@ -699,21 +695,6 @@ button:hover {
 /*------LANDSCAPE-MODE-MOBILE------*/
 
 @media screen and (max-width: 715px) {
-	
-	/*---NAV---*/
-
-	nav ul {
-		padding-left: 0;
-		margin: 0;
-	}
-
-	nav li {
-		font-size: 1.4rem;
-	}
-
-	nav .logo {
-		font-size: 2.5rem;
-	}
 
 	/*---MAIN---*/
 
@@ -775,16 +756,16 @@ button:hover {
 		margin-top: -14px;
 		font-size: 1rem;
 	}
-
-	.footer textarea {
-		font
-	
 }
 
-@media screen and (max-width: 626px) {
+@media screen and (max-width: 627px) {
 
 	nav li {
 		font-size: 1.27rem;
+	}
+
+	.logo {
+		font-size: 3.4rem;
 	}
 }
 
@@ -807,28 +788,41 @@ button:hover {
 
 }
 
-@media screen and (max-width: 530px) {
-	nav li {
-		font-size: 1.27rem;
-		margin-right: 7px;
-	}
-
-	.after:after {
-		left: 5.5px;
-		top: 4px;
-	}
-
-	.logo {
-		margin-left: 15px;
-	}
-}
-
-@media screen and (max-width: 518px) {
+@media screen and (max-width: 557px) {
 
 	/*---NAV---*/
 
+	.logo {
+		font-size: 2.5rem;
+		margin-left: 10px;
+	}
+
 	nav li {
 		display: none;
+	}
+
+	.ham-nav {
+		width: 100vw;
+		background-color: white;
+		height: 388px;
+		position: fixed;
+		top: -388px;
+		z-index: 2;
+		transition: all .5s ease;
+	}
+
+
+	.ham-nav a {
+		display: block;
+		font-size: 2rem;
+		color: red;
+		text-decoration-line: none;
+		font-family: 'Rajdhani';
+		text-align: center;
+		margin: 15px;
+		position: relative;
+		top: 60px;
+		transition: all 5s ease;
 	}
 
 	.ham-menu {
@@ -836,7 +830,7 @@ button:hover {
 		height: 55px;
 		position: fixed;
 		right: 0;
-		top: 4px;
+		top: 6px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -858,6 +852,27 @@ button:hover {
 	.hamburger-open .m1{transform: rotate(45deg) translate(4px, 12px);}
 	.hamburger-open .m2{opacity:0}
 	.hamburger-open .m3{transform: rotate(-45deg) translate(3px, -12px);}
+	.hamburger-open {box-shadow: none;}
+	.hamburger-open + div{top:0;}
+}
+
+@media screen and (max-width: 530px) {
+	nav li {
+		font-size: 1.27rem;
+		margin-right: 7px;
+	}
+
+	.after:after {
+		left: 5.5px;
+		top: 4px;
+	}
+
+	.logo {
+		margin-left: 15px;
+	}
+}
+
+@media screen and (max-width: 518px) {
 
 	/*---MAIN---*/
 
@@ -948,7 +963,7 @@ button:hover {
 
 	.footer .contact p {
 		margin: 5px;
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 	.copyright {

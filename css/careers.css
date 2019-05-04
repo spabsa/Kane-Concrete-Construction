@@ -43,8 +43,13 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 3;
 	box-shadow: 0px 0px 100px grey;
+	transition: all .5s ease;
+}
+
+.ham-nav a {
+	display: none;
 }
 
 li a {
@@ -488,87 +493,6 @@ button:hover {
 }
 
 @media screen and (max-width: 924px) {
-	form .label, form input {
-		font-size: 1.1rem;
-	}
-}
-
-@media screen and (max-width: 854px) {
-	.row-6 input {
-		flex-basis: 20%;
-	}
-}
-
-@media screen and (max-width: 829px) {
-
-    .footer .contact p {
-		font-size: 1rem;
-		margin-top: 3px;
-		margin-bottom: 3px;
-	}
-
-	.footer textarea {
-		font-size: 1rem;
-	}	
-}
-
-@media screen and (max-width: 823px) {
-	
-	/*---MAIN---*/
-
-	header, .careers-wrapper {
-		height: 65vh;
-	}
-
-	.label {
-		font-size: 1rem;
-		padding: 0;
-	}
-}
-
-@media screen and (max-width: 818px) {
-
-	/*---MAIN---*/
-
-	label {
-		font-size: 1rem;
-	}
-
-}
-
-@media screen and (max-width: 731px) {
-
-	/*---FOOTER---*/
-
-	.footer button {
-		margin-left: 6%;
-	}
-
-	.contact .inner p {
-		margin: 5px;
-	}
-
-}
-
-/*------LANDSCAPE-MODE-MOBILE------*/
-
-@media screen and (max-width: 715px) {
-
-	/*---NAV---*/
-
-	nav ul {
-		padding-left: 0;
-		margin: 0;
-	}
-
-	nav li {
-		font-size: 1.4rem;
-	}
-
-	nav .logo {
-		font-size: 2.5rem;
-	}
-
 	/*---MAIN---*/
 
 	form {
@@ -599,6 +523,55 @@ button:hover {
 		width: 90%;
 	}
 }
+
+@media screen and (max-width: 854px) {
+	.row-6 input {
+		flex-basis: 20%;
+	}
+}
+
+@media screen and (max-width: 829px) {
+
+    .footer .contact p {
+		font-size: 1rem;
+		margin-top: 6px;
+		margin-bottom: 6px;
+	}
+
+	.footer textarea {
+		font-size: 1rem;
+	}	
+}
+
+@media screen and (max-width: 823px) {
+	
+	/*---MAIN---*/
+
+	header, .careers-wrapper {
+		height: 65vh;
+	}
+
+	.label {
+		font-size: 1rem;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 731px) {
+
+	/*---FOOTER---*/
+
+	.footer button {
+		margin-left: 6%;
+	}
+
+	.contact .inner p {
+		margin: 5px;
+	}
+
+}
+
+/*------LANDSCAPE-MODE-MOBILE------*/
 
 @media screen and (max-width: 686px) {
 	thead th, tbody input {
@@ -650,7 +623,7 @@ button:hover {
 		font
 }	
 
-@media screen and (max-width: 626px) {
+@media screen and (max-width: 627px) {
 	nav li {
 		font-size: 1.27rem;
 	}
@@ -658,35 +631,55 @@ button:hover {
 	header h1 {
 		font-size: 3.5rem;
 	}
-}	
-
-
-@media screen and (max-width: 530px) {
-	nav li {
-		font-size: 1.27rem;
-		margin-right: 7px;
-	}
-
-	.after:after {
-		left: 5.5px;
-		top: 4px;
-	}
 
 	.logo {
-		margin-left: 15px;
+		font-size: 3.4rem;
 	}
-}
+}	
 
-@media screen and (max-width: 518px) {
-
+@media screen and (max-width: 557px) {
+	
 	/*---NAV---*/
+
+	.logo {
+		font-size: 2.5rem;
+		margin-left: 10px;
+	}
+
+	nav li {
+		display: none;
+	}
+
+	.ham-nav {
+		width: 100vw;
+		background-color: white;
+		height: 388px;
+		position: fixed;
+		top: -388px;
+		z-index: 2;
+		transition: all .5s ease;
+	}
+
+
+	.ham-nav a {
+		display: block;
+		font-size: 2rem;
+		color: red;
+		text-decoration-line: none;
+		font-family: 'Rajdhani';
+		text-align: center;
+		margin: 15px;
+		position: relative;
+		top: 60px;
+		transition: all 5s ease;
+	}
 
 	.ham-menu {
 		width: 55px;
 		height: 55px;
 		position: fixed;
 		right: 0;
-		top: 4px;
+		top: 6px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -708,10 +701,27 @@ button:hover {
 	.hamburger-open .m1{transform: rotate(45deg) translate(4px, 12px);}
 	.hamburger-open .m2{opacity:0}
 	.hamburger-open .m3{transform: rotate(-45deg) translate(3px, -12px);}
+	.hamburger-open {box-shadow: none;}
+	.hamburger-open + div{top:0;}
+}
 
+@media screen and (max-width: 530px) {
 	nav li {
-		display: none;
+		font-size: 1.27rem;
+		margin-right: 7px;
 	}
+
+	.after:after {
+		left: 5.5px;
+		top: 4px;
+	}
+
+	.logo {
+		margin-left: 15px;
+	}
+}
+
+@media screen and (max-width: 518px) {
 
 	/*---FOOTER---*/
 
@@ -796,7 +806,7 @@ button:hover {
 
 	.footer .contact p {
 		margin: 5px;
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 	.copyright {

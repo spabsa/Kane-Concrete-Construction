@@ -1,7 +1,7 @@
-const nav = document.querySelector('.ham-menu');
+const ham = document.querySelector('.ham-menu');
+const nav = document.querySelector('nav');
 
-nav.addEventListener('click', animateMenu);
-
+ham.addEventListener('click', animateMenu);
 	function animateMenu() {
 		nav.classList.toggle('hamburger-open');
-}
+	}

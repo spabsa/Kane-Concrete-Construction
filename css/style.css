@@ -11,7 +11,7 @@ li a {
 }
 
 header {
-	background-image: url(../img/wall2.jpeg);
+	background-image: url(../img/wall5.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-attachment: fixed;
@@ -30,8 +30,13 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 3;
 	box-shadow: 0px 0px 100px grey;
+	transition: all .5s ease;
+}
+
+.ham-nav a {
+	display: none;
 }
 
 nav ul {
@@ -457,61 +462,28 @@ button:hover {
 
 @media screen and (max-width: 1024px) {
 
-	/*---NAV---*/
-
-	.logo {
-		font-size: 3rem;
-	}
-
-	nav li {
-		font-size: 2rem;
-	}
-
-	/*---MAIN---*/
-
-	header {
-		height: 100vh;
-	}
-
 	.phrase p {
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 
 	.phrase a {
 		font-size: 1.5rem;
 	}
 
-	.stats p {
-		font-size: 2rem;
-	}
-	
-	/*---FOOTER---*/
-	
-	.footer .inner {
-		margin-left: 30px;
+	.phrase .fas {
+		font-size: 3.1rem;
 	}
 
-	.footer-textarea {
-		width: 88%;
+	.stat-num {
+		font-size: 2.5rem;
 	}
 
-	.footer button {
-		margin-right: 10.25%;
+	.stat-info {
+		font-size: 1.8rem;
 	}
 
-	.footer h1 span {
-	  display: inline;
-	  position: relative;
-	}
-
-	.footer h1 span:after {
-	  content: '';
-	  height: 2px;
-	  width: 100%;
-	  background-color: red;
-	  position: absolute;
-	  bottom: 0;
-	  left: 0;
+	.promise p {
+		font-size: 1.6rem;
 	}
 
 }
@@ -535,61 +507,27 @@ button:hover {
 
 }
 
-/*------LANDSCAPE-MODE------*/
+@media screen and (max-width: 829px) {
 
-@media screen and (max-width: 812px) {
+    @media screen and (max-width: 829px) {
 
-	/*---NAV---*/
-
-	nav li {
-		font-size: 1.7rem;
+    .footer .contact p {
+		font-size: 1rem;
+		margin-top: 6px;
+		margin-bottom: 6px;
 	}
 
-	.logo {
-		font-size: 2.7rem;
-	}
-
-	/*---MAIN---*/
-
-	header {
-		height: 100vh;
-	}
-
-	.stats p {
-		font-size: 2rem;
-	}
-
-	.promise p {
-		font-size: 1.3rem;
-	}
-
-
-
-	/*---FOOTER---*/
-
-	.footer button {
-		margin-left: 8.5%;
-	}
-
-	.contact .inner {
-		margin-right: 20px;
-	}
-
+	.footer textarea {
+		font-size: 1rem;
+	}	
+}	
 }
+
+
 
 /*---TABLET---*/
 
 @media screen and (max-width: 768px) {
-
-	/*---NAV---*/
-
-	nav li {
-		font-size: 1.6rem;
-	}
-
-	.logo {
-		font-size: 3rem;
-	}
 
 	/*---MAIN---*/
 
@@ -621,14 +559,8 @@ button:hover {
 
 @media screen and (max-width: 731px) {
 
-	/*---FOOTER---*/
-
-	.footer button {
-		margin-left: 6%;
-	}
-
-	.contact .inner p {
-		margin: 5px;
+	.promise p {
+		font-size: 1.48rem;
 	}
 
 }
@@ -648,47 +580,50 @@ button:hover {
 	}
 
 	.phrase a {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	/*---FOOTER---*/
+
+	.footer h1 {
 		font-size: 1.5rem;
 	}
 
-	nav ul {
-		padding-left: 0;
-		margin: 0;
+	.footer .inner:before {
+		margin-top: 43px;
 	}
-
-	nav li {
-		font-size: 1.4rem;
-	}
-
-	nav .logo {
-		font-size: 2.5rem;
-	}
-
-	/*---FOOTER---*/
 
 	.links a {
-		font-size: 1.1rem;
-		top: -13px;
+		font-size: 1rem;
+		top: -14px;
 	}
 
-	.contact .inner {
-		margin-right: 15px;
-	}
-
-	.contact p {
-		margin: 5px;
-	}
-
-	.footer-textarea {
-		position: relative;
-		top: -5px;
-		width: 90.5%;
+	.social i {
+		font-size: 1.5rem;
+		margin-right: 2px;
+		top: -17px;
 	}
 
 	.footer button {
-		margin-top: -18px;
-		margin-right: 7%;
-		font-size: 1.1rem;
+		margin-top: -14px;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 627px) {
+
+	nav li {
+		font-size: 1.27rem;
+	}
+
+	.logo {
+		font-size: 3.4rem;
+	}
+
+	.stat-num, .stat-info {
+		font-size: 1.6rem;
 	}
 }
 
@@ -699,130 +634,101 @@ button:hover {
 	.phrase p {
 		font-size: 2.7rem;
 	}
-
-	.stats p {
-		font-size: 1.5rem;
-	}
-
-	/*---FOOTER---*/
-
-	.footer .wrapper {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.footer div {
-		margin: 0;
-	}
-
-	.footer h1 {
-		font-size: 2rem;
-		margin-top: 10px;
-	}
-
-	.footer .inner {
-		margin: 0;
-	}
-
-	.footer .inner:before {
-		display: inline-block;
-		content: '';
-		width: 100vw;
-		height: 2px;
-		background-color: rgba(102,102,102, 0.6);
-		position: absolute;
-		margin-top: 48px;
-	}
-
-	.footer h1 span:after {
-	  content: '';
-	  height: 2px;
-	  width: 100%;
-	  background-color: red;
-	  position: absolute;
-	  bottom: 1px;
-	  left: 0;
-	}
-
-	.social .inner {
-		position: relative;
-		top: -10px;
-	}
-
-	.links a {
-		margin-left: 5px;
-	}
-
-	.social h1 {
-		margin-bottom: 10px;
-	}
-
-	#msg {
-		font-size: 1rem;
-		margin-bottom: 0;
-		margin-right: 25.5%;
-		position: absolute;
-		right: 5px;
-		top: 80px;
-	}
-
-	.footer button {
-		right: 9.25%;
-		margin-top: 0.2px;
-	}
-
-	.social i {
-		font-size: 1.8rem;
-		margin-right: 2px;
-		position: relative;
-		top: -5px;
-		left: 5px;
-		color: rgba(102,102,102, 0.7);
-		transition: all 0.4s ease;
-	}
-
-	.footer-textarea {
-		width: 88.5%;
-		margin-top: 25px;
-		margin-left: 5px;
-	}
-
-	.contact p {
-		margin: 5px;
-		font-size: 1.2rem;
-	}
-
-	.copyright {
-		background-color: red;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	.copyright span {
-		color: white;
-		background-color: red;
-	}
-
 }
 
 @media screen and (max-width: 568px) {
 
 	/*---MAIN---*/
 
-	.phrase p {
-		font-size: 2rem;
-	}
-
-	.phrase a {
-		font-size: 1.3rem;
-	}
-
-	.stats p {
+	.stat-num, .stat-info {
 		font-size: 1.5rem;
 	}
 
 	.promise p {
 		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 557px) {
+
+	/*---NAV---*/
+
+	.logo {
+		font-size: 2.5rem;
+		margin-left: 10px;
+	}
+
+	nav li {
+		display: none;
+	}
+
+	.ham-nav {
+		width: 100vw;
+		background-color: white;
+		height: 388px;
+		position: fixed;
+		top: -388px;
+		z-index: 2;
+		transition: all .5s ease;
+	}
+
+
+	.ham-nav a {
+		display: block;
+		font-size: 2rem;
+		color: red;
+		text-decoration-line: none;
+		font-family: 'Rajdhani';
+		text-align: center;
+		margin: 15px;
+		position: relative;
+		top: 60px;
+		transition: all 5s ease;
+	}
+
+	.ham-menu {
+		width: 55px;
+		height: 55px;
+		position: fixed;
+		right: 0;
+		top: 6px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.m1, .m2, .m3 {
+		border-radius: 4px;
+		margin: 4px;
+		width: 35px;
+		height: 3px;
+		background-color: red;
+		float: left;
+		position: relative;
+		transition:all .3s ease;
+		opacity:1;
+	}
+
+	.hamburger-open .m1{transform: rotate(45deg) translate(4px, 12px);}
+	.hamburger-open .m2{opacity:0}
+	.hamburger-open .m3{transform: rotate(-45deg) translate(3px, -12px);}
+	.hamburger-open {box-shadow: none;}
+	.hamburger-open + div{top:0;}
+}
+
+@media screen and (max-width: 518px) {
+
+	/*---NAV---*/
+
+	nav li {
+		font-size: 1.1rem;
+	}
+
+	/*---MAIN---*/
+
+	header h1 {
+		font-size: 3rem;
 	}
 
 	/*---FOOTER---*/
@@ -874,6 +780,10 @@ button:hover {
 		width: 100vw;
 	}
 
+	.contact .inner {
+		margin-bottom: 20px;
+	}
+
 	.links a {
 		margin-left: 5px;
 	}
@@ -882,18 +792,9 @@ button:hover {
 		margin-bottom: 10px;
 	}
 
-	#msg {
-		font-size: 1rem;
-		margin-bottom: 0;
-		margin-right: 25.5%;
-		position: absolute;
-		right: 5px;
-		top: 80px;
-	}
-
 	.footer button {
-		right: 9.25%;
-		margin-top: 0.2px;
+		margin-top: -5px;
+		margin-right: 3px;
 	}
 
 	.social i {
@@ -907,188 +808,29 @@ button:hover {
 	}
 
 	.footer-textarea {
-		width: 88.5%;
-		margin-top: 30px;
+		width: 98%;
 		margin-left: 5px;
 	}
 
-	.contact p {
-		margin: 5px;
-		font-size: 1.2rem;
-	}
-
-	.copyright {
-		background-color: red;
-	}
-
-	.copyright span {
-		color: white;
-		background-color: red;
-	}
 }
 
-@media screen and (max-width: 517px) {
-
-	/*---NAV---*/
-
-	nav li {
-		font-size: 1.1rem;
-	}
-
-	/*---MAIN---*/
-
-	header h1 {
-		font-size: 3rem;
-	}
-
-	/*---FOOTER---*/
-
-	.footer .wrapper {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.footer div {
-		margin: 0;
-	}
-
-	.footer h1 {
-		font-size: 2rem;
-		margin-top: 10px;
-	}
-
-	.footer .inner {
-		margin: 0;
-	}
-
-	.footer .inner:before {
-		display: inline-block;
-		content: '';
-		width: 100vw;
-		height: 2px;
-		background-color: rgba(102,102,102, 0.6);
-		position: absolute;
-		margin-top: 48px;
-	}
-
-	.social .inner {
-		position: relative;
-		top: -10px;
-	}
-
-	.footer h1 span:after {
-	    content: '';
-	    height: 2px;
-	    width: 100%;
-	    background-color: red;
-		position: absolute;
-	  	bottom: 1px;
-		left: 0;
-	}
-
-	.links a {
-		margin-left: 5px;
-	}
-
-	.social h1 {
-		margin-bottom: 10px;
-	}
-
-	#msg {
-		font-size: 1.3rem;
-		margin-bottom: 0;
-		float: right;
-		margin-right: 25.5%;
-		position: relative;
-		top: 15px;
-	}
-
-	.footer button {
-		right: 9.25%;
-		margin-top: 0.2px;
-	}
-
-	.social i {
-		font-size: 1.8rem;
-		margin-right: 7px;
-		position: relative;
-		top: -5px;
-		left: 5px;
-		color: rgba(102,102,102, 0.7);
-		transition: all 0.4s ease;
-	}
-
-	.footer-textarea {
-		width: 88.5%;
-		margin-left: 5px;
-		margin-top: 0px;
-		position: relative;
-		top: 10px;
-	}
-
-	.contact p {
-		margin: 5px;
-		font-size: 1.2rem;
-	}
-
-	.copyright {
-		background-color: red;
-	}
-
-	.copyright span {
-		color: white;
-		background-color: red;
-	}
-
+@media screen and (max-width: 507px) {
+	
 }
 
 /*---MOBILE---*/
 
-@media screen and (max-width: 425px) {
-
-	/*---NAV---*/
-
-	.logo {
-		font-size: 2.5rem;
-		margin-left: 10px;
-	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	nav li {
-		display: none;
-	}
-
-	.ham-menu {
-		width: 55px;
-		height: 55px;
-		position: fixed;
-		right: 0;
-		top: 4px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+@media screen and (max-width: 490px) {
+	.stats {
 		flex-direction: column;
 	}
 
-	.m1, .m2, .m3 {
-		border-radius: 4px;
-		margin: 4px;
-		width: 35px;
-		height: 3px;
-		background-color: red;
-		float: left;
-		position: relative;
-		transition:all .3s ease;
-		opacity:1;
+	.stat-num, .stat-info {
+		font-size: 2rem;
 	}
+}
 
-	.hamburger-open .m1{transform: rotate(45deg) translate(4px, 12px);}
-	.hamburger-open .m2{opacity:0}
-	.hamburger-open .m3{transform: rotate(-45deg) translate(3px, -12px);}
+@media screen and (max-width: 425px) {
 
 	/*---MAIN---*/
 
@@ -1112,7 +854,7 @@ button:hover {
 	}
 
 	.stats p {
-		font-size: 1.3rem;
+		font-size: 1.7rem;
 	}
 
 	.stats div {
@@ -1130,118 +872,7 @@ button:hover {
 	.promise p {
 		position: relative;
 		top: 10px;
-		font-size: 1.3rem;
-	}
-
-	/*---FOOTER---*/
-
-	.footer .wrapper {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.footer div {
-		margin: 0;
-	}
-
-	.footer h1 {
-		font-size: 2rem;
-		margin-top: 10px;
-	}
-
-	.footer .inner {
-		margin: 0;
-	}
-
-	.footer .inner:before {
-		display: inline-block;
-		content: '';
-		width: 100vw;
-		height: 2px;
-		background-color: rgba(102,102,102, 0.6);
-		position: absolute;
-		margin-top: 48px;
-	}
-
-	.social .inner {
-		position: relative;
-		top: -9.5px;
-	}
-
-	.footer h1 span {
-	  display: inline;
-	  position: relative;
-	}
-
-	.footer h1 span:after {
-	  content: '';
-	  height: 2px;
-	  width: 100%;
-	  background-color: red;
-	  position: absolute;
-	  bottom: 1px;
-	  left: 0;
-	}
-
-	.links a {
-		margin-left: 5px;
-	}
-
-	.social h1 {
-		margin-bottom: 10px;
-	}
-
-	#msg {
-		font-size: 1rem;
-		margin-bottom: 0;
-		margin-right: 25.5%;
-		position: absolute;
-		right: 5px;
-		top: 80px;
-	}
-
-	.footer button {
-		right: 9.25%;
-		margin-top: 0.2px;
-	}
-
-	.social i {
-		font-size: 1.8rem;
-		margin-right: 2px;
-		position: relative;
-		top: -5px;
-		left: 5px;
-		color: rgba(102,102,102, 0.7);
-		transition: all 0.4s ease;
-	}
-
-	.footer-textarea {
-		width: 88.5%;
-		margin-top: 0px;
-		margin-left: 5px;
-	}
-
-	.contact p {
-		margin: 5px;
-		font-size: 1.2rem;
-	}
-
-	.copyright {
-		background-color: red;
-	}
-
-	.copyright span {
-		color: white;
-		background-color: red;
-	}
-
-}
-
-@media screen and (max-width: 360px) {
-	.footer button {
-		margin-right: 8.5%;
+		font-size: 1.22rem;
 	}
 }
-
-/*---HAM-MENU-ANIMATIONS---*/
 

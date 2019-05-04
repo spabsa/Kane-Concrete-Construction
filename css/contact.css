@@ -44,8 +44,13 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 3;
 	box-shadow: 0px 0px 100px grey;
+	transition: all .5s ease;
+}
+
+.ham-nav a {
+	display: none;
 }
 
 li a {
@@ -200,7 +205,7 @@ hr {
 	content: '';
 	height: 1.5px;
 	display: inline-block;
-	background-color: grey;
+	background-color: rgba(102,102,102, 0.6);
 	width: 100%;
 	position: relative;
 	top: -35px;
@@ -214,6 +219,7 @@ hr {
 
 .contact-numbers i {
 	color: red;
+	position: relative;
 }
 
 /*---FOOTER---*/
@@ -392,6 +398,52 @@ button:hover {
 
 }
 
+@media screen and (min-width: 1100px) {
+	.quote-info input {
+		margin-bottom: 10px;
+	}
+
+	.quote-info .send-quote {
+		font-size: 1.5rem;
+	}
+
+	.contact h3:after {
+		width: 95%;
+	}
+
+	.contact-info {
+		margin-left: -10px; 
+	}
+
+	.contact-info i {
+		font-size: 1.5rem;: 
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+	.quote-info input {
+		margin-bottom: 10px;
+	}
+
+	.quote-info .send-quote {
+		font-size: 1.5rem;
+	}
+
+	.contact h3:after {
+		width: 95%;
+	}
+
+	.contact-info {
+		margin-left: -10px; 
+	}
+
+	.contact-info i {
+		font-size: 1.5rem;: 
+	}
+
+}
+
 @media screen and (min-width: 1300px) {
 	.quote-info input {
 		margin-bottom: 10px;
@@ -430,7 +482,7 @@ button:hover {
 	}
 
 	.contact h3:after {
-		width: 95%;
+		width: 97%;
 	}
 
 	.contact-info {
@@ -464,9 +516,18 @@ button:hover {
 	.contact-info p {
 		font-size: 1.5rem;
 	}
+
+	.contact h3:after {
+		width: 97%;
+	}
 }
 
 @media screen and (min-width: 1700px) {
+
+	.contact h3:after {
+		width: 97%;
+	}
+
 	.quote-info {
 		width: 25%;
 	}
@@ -486,6 +547,10 @@ button:hover {
 }
 
 @media screen and (min-width: 1800px) {
+	.contact h3:after {
+		width: 99%;
+	}
+
 	.quote-info {
 		width: 23%;
 	}
@@ -520,6 +585,10 @@ button:hover {
 
 	.contact-info p {
 		font-size: 1.5rem;
+	}
+
+	.contact h3:after {
+		width: 97%;
 	}
 }
 
@@ -573,7 +642,7 @@ button:hover {
 
 @media screen and (max-width: 924px) {
 	.quote-info {
-		width: 35%;
+		width: 40%;
 	}			
 
 	.quote-info input {
@@ -614,8 +683,8 @@ button:hover {
 
     .footer .contact p {
 		font-size: 1rem;
-		margin-top: 3px;
-		margin-bottom: 3px;
+		margin-top: 6px;
+		margin-bottom: 6px;
 	}
 
 	.footer textarea {
@@ -657,14 +726,6 @@ button:hover {
 		height: 65vh;
 	}
 
-	.quote-info {
-		width: 40%;
-	}
-
-	.contact-info h3:after {
-		width: 95%;
-	}
-
 	.contact-info h3 {
 		margin-left: 20px;
 	}
@@ -672,33 +733,14 @@ button:hover {
 	.contact-numbers div {
 		margin-left: 20px;
 	}
+
+	.quote-info {
+		width: 55%;
+	}
 }
 
 /*------LANDSCAPE-MODE-MOBILE------*/
 
-@media screen and (max-width: 715px) {
-	
-	/*---NAV---*/
-
-	nav ul {
-		padding-left: 0;
-		margin: 0;
-	}
-
-	nav li {
-		font-size: 1.5rem;
-	}
-
-	nav .logo {
-		font-size: 2.7rem;
-	}
-
-	/*---MAIN---*/
-
-	.quote-info {
-		width: 40%;
-	}
-}
 
 @media screen and (max-width: 640px) {
 
@@ -706,10 +748,6 @@ button:hover {
 
 	header h1 {
 		font-size: 4rem;
-	}
-
-	.contact-info h3:after {
-		width: 95%;
 	}
 
 	/*---FOOTER---*/
@@ -744,10 +782,14 @@ button:hover {
 
 }
 
-@media screen and (max-width: 626px) {
+@media screen and (max-width: 627px) {
 
 	nav li {
 		font-size: 1.27rem;
+	}
+
+	.logo {
+		font-size: 3.4rem;
 	}
 
 	/*---MAIN---*/
@@ -760,36 +802,91 @@ button:hover {
 		margin-bottom: 0;
 	}
 
-	.quote-info {
-		width: 65%;
-	}
-
-	.quote-info p {
+	.contact-numbers i, .contact-info p {
 		font-size: 1.2rem;
-	}
-
-	.quote-info input, 
-	.quote-info textarea {
-		width: 85.5%;
-		font-size: 1.05rem;
-	}
-
-	.quote-info .send-quote {
-		font-size: 1.1rem;
-	}
-
-	.contact-info {
-		width: 100%;
-	}
-
-	.contact-info i {
-		margin-bottom: 10px;
+		top: -15px;
 	}
 
 	.contact-info h3:after {
 		width: 95%;
 	}
 
+	.quote-info {
+		max-height: 445px;
+	}
+
+	.quote-info input, .quote-info textarea {
+		font-size: 1.1rem;
+	}
+
+}
+
+@media screen and (max-width: 557px) {
+	
+	/*---NAV---*/
+
+	.logo {
+		font-size: 2.5rem;
+		margin-left: 10px;
+	}
+
+	nav li {
+		display: none;
+	}
+
+	.ham-nav {
+		width: 100vw;
+		background-color: white;
+		height: 388px;
+		position: fixed;
+		top: -388px;
+		z-index: 2;
+		transition: all .5s ease;
+	}
+
+
+	.ham-nav a {
+		display: block;
+		font-size: 2rem;
+		color: red;
+		text-decoration-line: none;
+		font-family: 'Rajdhani';
+		text-align: center;
+		margin: 15px;
+		position: relative;
+		top: 60px;
+		transition: all 5s ease;
+	}
+
+	.ham-menu {
+		width: 55px;
+		height: 55px;
+		position: fixed;
+		right: 0;
+		top: 6px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.m1, .m2, .m3 {
+		border-radius: 4px;
+		margin: 4px;
+		width: 35px;
+		height: 3px;
+		background-color: red;
+		float: left;
+		position: relative;
+		transition:all .3s ease;
+		opacity:1;
+	}
+
+	.hamburger-open .m1{transform: rotate(45deg) translate(4px, 12px);}
+	.hamburger-open .m2{opacity:0}
+	.hamburger-open .m3{transform: rotate(-45deg) translate(3px, -12px);}
+	.hamburger-open {box-shadow: none;}
+	.hamburger-open + div{top:0;}
 }
 
 @media screen and (max-width: 530px) {
@@ -823,38 +920,11 @@ button:hover {
 		padding: 0;
 	}
 
-	nav li {
-		display: none;
-	}
+	/*---MAIN---*/
 
-	.ham-menu {
-		width: 55px;
-		height: 55px;
-		position: fixed;
-		right: 0;
-		top: 4px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.contact .container {
 		flex-direction: column;
 	}
-
-	.m1, .m2, .m3 {
-		border-radius: 4px;
-		margin: 4px;
-		width: 35px;
-		height: 3px;
-		background-color: red;
-		float: left;
-		transition:all .3s ease;
-		opacity:1;
-	}
-
-	.hamburger-open .m1{transform: rotate(45deg) translate(4px, 12px);}
-	.hamburger-open .m2{opacity:0}
-	.hamburger-open .m3{transform: rotate(-45deg) translate(3px, -12px);}
-
-	/*---MAIN---*/
 
 	.quote-info {
 		width: 85%;
@@ -862,33 +932,17 @@ button:hover {
 		margin-right: auto;
 	}
 
-	.quote-info p {
-		font-size: 1.57rem;
-		margin-top: 6px;
-		margin-bottom: 6px;
-		top: 0;
+	.contact h3 {
+		margin-left: 40px;
 	}
 
-	.quote-info input {
-		margin-bottom: 7px;
-		font-size: 1.15rem;
-	}
-
-	.contact-info h3:after {
-		width: 150%;
+	.contact h3:after {
+		width: 260%;
 		left: -30px;
 	}
 
-	.contact-info h3 {
-		margin-left: 35px;
-	}
-
-	.contact-info i, .contact-info p {
+	.contact-numbers i, .contact-info p {
 		margin-left: 20px;
-	}
-
-	.contact .container {
-		flex-direction: column;
 	}
 
 	/*---FOOTER---*/
@@ -974,7 +1028,7 @@ button:hover {
 
 	.footer .contact p {
 		margin: 5px;
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 	.copyright {
@@ -1002,6 +1056,12 @@ button:hover {
 
 	.contact-info i, .contact-info p {
 		margin-left: 12px;
+	}
+}
+
+@media screen and (max-width: 302px) {
+	.contact h3 {
+		width: 100vw;
 	}
 }
 
