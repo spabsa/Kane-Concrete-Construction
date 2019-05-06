@@ -192,7 +192,7 @@ nav li a:hover {
 /*---TESTIMONY---*/
 
 .testimony {
-	background-image: url('../img/wall4.jpg');
+	background-image: url('img/wall4.jpg');
 	display: flex;
 	justify-content: space-around;
 	background-attachment: fixed;
