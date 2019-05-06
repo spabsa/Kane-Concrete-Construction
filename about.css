@@ -18,7 +18,7 @@ nav li a {
 }
 
 header {
-	background-image: url(../img/pexels.jpg);
+	background-image: url(img/pexels.jpg);
 	background-position: center;
 	background-size: cover;
 	height: 65vh;
@@ -137,7 +137,7 @@ nav li a:hover {
 /*---SERVICES---*/
 
 .services {
-	background-image: url(../img/pour.jpeg);
+	background-image: url(img/pour.jpeg);
 	background-size: cover;
 	background-attachment: fixed;
 }

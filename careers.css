@@ -6,7 +6,7 @@ html, body {
 /*---HEADER---*/
 
 header {
-	background-image: url(../img/support.jpeg);
+	background-image: url(img/support.jpeg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
