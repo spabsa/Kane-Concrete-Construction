@@ -328,9 +328,14 @@ hr {
 	width: 99.5%;
 }
 
+.social #form {
+	position: relative;
+}
+
 .footer button {
-	float: right;
-	margin-top: -17px;
+	position: absolute;
+	right: 0;
+	top: -50px;
 	border: none;
 	font-family: 'Rajdhani';
 	font-size: 1.2rem;
@@ -772,7 +777,7 @@ button:hover {
 	}
 
 	.footer button {
-		margin-top: -14px;
+		top: -44px;
 		font-size: 1rem;
 	}
 
@@ -985,6 +990,12 @@ button:hover {
 	  left: 0;
 	}
 
+	.social form {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+	}
+
 	.social .inner {
 		position: relative;
 		top: -10px;
@@ -1007,8 +1018,9 @@ button:hover {
 	}
 
 	.footer button {
-		margin-top: -5px;
-		margin-right: 3px;
+		top: -38px;
+		right: 1%;
+		font-size: 1.2rem;
 	}
 
 	.social i {
@@ -1023,7 +1035,6 @@ button:hover {
 
 	.footer-textarea {
 		width: 98%;
-		margin-left: 5px;
 	}
 
 	.footer .contact p {

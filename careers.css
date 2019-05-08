@@ -95,7 +95,7 @@ li a:hover {
 
 /*---FORM---*/
 
-form {
+#application-form {
 	border: 1px solid black;
 	margin-top: 10px;
 	margin-left: 30px;
@@ -427,9 +427,14 @@ tbody input {
 	width: 99.5%;
 }
 
+.social #form {
+	position: relative;
+}
+
 .footer button {
-	float: right;
-	margin-top: -17px;
+	position: absolute;
+	right: 0;
+	top: -50px;
 	border: none;
 	font-family: 'Rajdhani';
 	font-size: 1.2rem;
@@ -495,7 +500,7 @@ button:hover {
 @media screen and (max-width: 924px) {
 	/*---MAIN---*/
 
-	form {
+	#application-form {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
@@ -615,7 +620,7 @@ button:hover {
 	}
 
 	.footer button {
-		margin-top: -14px;
+		top: -44px;
 		font-size: 1rem;
 	}
 
@@ -763,6 +768,12 @@ button:hover {
 	  left: 0;
 	}
 
+	.social form {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+	}
+
 	.social .inner {
 		position: relative;
 		top: -10px;
@@ -785,8 +796,9 @@ button:hover {
 	}
 
 	.footer button {
-		margin-top: -5px;
-		margin-right: 3px;
+		top: -38px;
+		right: 1%;
+		font-size: 1.2rem;
 	}
 
 	.social i {
@@ -801,7 +813,6 @@ button:hover {
 
 	.footer-textarea {
 		width: 98%;
-		margin-left: 5px;
 	}
 
 	.footer .contact p {
@@ -850,7 +861,7 @@ button:hover {
 	}
 
 
-	form {
+	#application-form {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
