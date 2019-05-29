@@ -85,14 +85,13 @@ li a:hover {
 	background-color: rgba(102,102,102,0.25);
 }
 
-.logo {
-	color: red;
-	font-size: 3.7rem;
-	margin: 10px;
-	opacity: 1;
-	margin-left: 30px;
+.logo {	
+	width: 225px;
+	height: 74px;
+	margin-bottom: 5px;
+	margin-top: 2px;
+	margin-left: 5px;
 }
-
 /*---FORM---*/
 
 #application-form {
@@ -576,6 +575,21 @@ button:hover {
 
 }
 
+@media screen and (max-width: 720px) {
+	nav li {
+		font-size: 1.27rem;
+	}
+
+	header h1 {
+		font-size: 3.5rem;
+	}
+
+	.logo {
+		font-size: 3.4rem;
+	}
+}
+
+
 /*------LANDSCAPE-MODE-MOBILE------*/
 
 @media screen and (max-width: 686px) {
@@ -591,7 +605,6 @@ button:hover {
     	min-width: 635px;
   	}
 }
-
 
 @media screen and (max-width: 640px) {
 	header h1 {
@@ -626,21 +639,14 @@ button:hover {
 
 	.footer textarea {
 		font
-}	
+}		
 
-@media screen and (max-width: 627px) {
-	nav li {
-		font-size: 1.27rem;
-	}
-
-	header h1 {
-		font-size: 3.5rem;
-	}
-
+@media screen and (max-width: 575px) {
 	.logo {
-		font-size: 3.4rem;
+		margin-left: 15px;
+		font-size: 3.15rem;
 	}
-}	
+}
 
 @media screen and (max-width: 557px) {
 	

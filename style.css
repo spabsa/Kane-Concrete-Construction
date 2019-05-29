@@ -68,11 +68,12 @@ li a:hover {
 	background-color: rgba(102,102,102,0.25);
 }
 
-.logo {	color: red;
-	font-size: 3.7rem;
-	margin: 10px;
-	opacity: 1;
-	margin-left: 30px;
+.logo {	
+	width: 225px;
+	height: 74px;
+	margin-bottom: 5px;
+	margin-top: 2px;
+	margin-left: 5px;
 }
 
 .phrase {
@@ -560,6 +561,21 @@ button:hover {
 
 /*------LANDSCAPE-MODE-MOBILE------*/
 
+@media screen and (max-width: 720px) {
+
+	nav li {
+		font-size: 1.27rem;
+	}
+
+	.logo {
+		font-size: 3.4rem;
+	}
+
+	.stat-num, .stat-info {
+		font-size: 1.6rem;
+	}
+}
+
 @media screen and (max-width: 715px) {
 	
 	/*---NAV---*/
@@ -605,27 +621,19 @@ button:hover {
 	}
 }
 
-@media screen and (max-width: 627px) {
-
-	nav li {
-		font-size: 1.27rem;
-	}
-
-	.logo {
-		font-size: 3.4rem;
-	}
-
-	.stat-num, .stat-info {
-		font-size: 1.6rem;
-	}
-}
-
 @media screen and (max-width: 586px) {
 
 	/*---MAIN---*/
 
 	.phrase p {
 		font-size: 2.7rem;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.logo {
+		margin-left: 15px;
+		font-size: 3.15rem;
 	}
 }
 

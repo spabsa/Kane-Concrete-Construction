@@ -87,12 +87,12 @@ li a:hover {
 	background-color: rgba(102,102,102,0.25);
 }
 
-.logo {
-	color: red;
-	font-size: 3.7rem;
-	margin: 10px;
-	opacity: 1;
-	margin-left: 30px;
+.logo {	
+	width: 225px;
+	height: 74px;
+	margin-bottom: 5px;
+	margin-top: 2px;
+	margin-left: 5px;
 }
 
 /*---MAIN---*/
@@ -746,6 +746,44 @@ button:hover {
 
 /*------LANDSCAPE-MODE-MOBILE------*/
 
+@media screen and (max-width: 720px) {
+
+	nav li {
+		font-size: 1.27rem;
+	}
+
+	.logo {
+		font-size: 3.4rem;
+	}
+
+	/*---MAIN---*/
+
+	header h1 {
+		font-size: 3.5rem;
+	}
+
+	.contact h2 {
+		margin-bottom: 0;
+	}
+
+	.contact-numbers i, .contact-info p {
+		font-size: 1.2rem;
+		top: -15px;
+	}
+
+	.contact-info h3:after {
+		width: 95%;
+	}
+
+	.quote-info {
+		max-height: 445px;
+	}
+
+	.quote-info input, .quote-info textarea {
+		font-size: 1.1rem;
+	}
+
+}
 
 @media screen and (max-width: 640px) {
 
@@ -787,43 +825,11 @@ button:hover {
 
 }
 
-@media screen and (max-width: 627px) {
-
-	nav li {
-		font-size: 1.27rem;
-	}
-
+@media screen and (max-width: 575px) {
 	.logo {
-		font-size: 3.4rem;
+		margin-left: 15px;
+		font-size: 3.15rem;
 	}
-
-	/*---MAIN---*/
-
-	header h1 {
-		font-size: 3.5rem;
-	}
-
-	.contact h2 {
-		margin-bottom: 0;
-	}
-
-	.contact-numbers i, .contact-info p {
-		font-size: 1.2rem;
-		top: -15px;
-	}
-
-	.contact-info h3:after {
-		width: 95%;
-	}
-
-	.quote-info {
-		max-height: 445px;
-	}
-
-	.quote-info input, .quote-info textarea {
-		font-size: 1.1rem;
-	}
-
 }
 
 @media screen and (max-width: 557px) {
